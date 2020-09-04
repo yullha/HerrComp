@@ -63,8 +63,8 @@ float compute_f(float x)
 /*
   since f(x) = 5 - sqrt(25 + x*x), if you multiply and divide by his conjugate, then
   f(x) = (5 - sqrt(25 + x*x))*(5 + sqrt(25 + x*x))/(5 + sqrt(25 + x*x)),
-       = (25 - (25 + x**x))/(5 + sqrt(25 + x*x),
-       = - x**x/(5 + sqrt(25 + x*x).
+       = (25 - (25 + x*x))/(5 + sqrt(25 + x*x),
+       = - x*x/(5 + sqrt(25 + x*x).
    i.e., you suprime the substraction. Let see this in the method compute_f_mod().
   */
 float compute_f_mod(float x)
