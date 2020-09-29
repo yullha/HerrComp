@@ -15,5 +15,3 @@ fig.pdf: plot.py data.txt
 
 clean:
 	rm *.x data.txt
-
-
