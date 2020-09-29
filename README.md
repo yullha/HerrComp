@@ -1,1 +1,1 @@
-# HerramientasComputacionales is an academic repository to study some functionalities in Numerical errors, Makefiles, Standard libraries and random numbers, Install libraries from souces, Debuging, etc. 
+# HerramientasComputacionales is an academic repository to study some functionalities in Numerical errors, Makefiles, Standard libraries and random numbers, Install libraries from sources, Debuging, etc. 
