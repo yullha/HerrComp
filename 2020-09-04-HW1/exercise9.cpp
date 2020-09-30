@@ -1,8 +1,3 @@
-/* Exercise 9.
-    Write a program to print a table of the function f(x) = 5 - sqrt(25+ x^2) for x= 0 to 1 with steps of 0.01.
-    Be sure that your program yields mull machine precision, but do not program the problem in double precision. Explain the results.
-*/
-
 #include <iostream>
 #include <cmath>
 
@@ -12,6 +7,7 @@ using namespace std;
 
 void set();
 void functions(float xmin, float xmax, float step);
+void print_parameters(float xmin, float xmax, float step);
 float compute_f(float x);
 float compute_f_mod(float x);
 
@@ -30,12 +26,7 @@ void set()
 
 void functions(float xmin, float xmax, float step)
 {  
-  // Print parameters
-  cout << "Students: Yul E. Villalba, Wilson A. Estacio.\n"
-       << "The input parameters are:\n"
-       << "xmin = " << xmin << "\n"
-       << "xmax = " << xmax << "\n"
-       << "step = " << step << "\n";
+  print_parameters(xmin, xmax, step);
 
   // Print table's names
   cout << "x" << "\t\t\t\t"
@@ -52,6 +43,15 @@ void functions(float xmin, float xmax, float step)
 
     cout << x << "\t" << f << "\t" << g << "\n";  
   }  
+}
+
+void print_parameters(float xmin, float xmax, float step)
+{
+  cout << "Students: Yul E. Villalba, Wuilson A. Estacio.\n"
+       << "The input parameters are:\n"
+       << "xmin = " << xmin << "\n"
+       << "xmax = " << xmax << "\n"
+       << "step = " << step << "\n";  
 }
 
 float compute_f(float x)
