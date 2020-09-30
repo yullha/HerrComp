@@ -4,8 +4,8 @@
 
 all: fig.pdf clean
 
-legendre.x: example1.cpp
-	g++ -std=c++17 example1.cpp -o legendre.x
+legendre.x: legendre.cpp
+	g++ -std=c++17 legendre.cpp -o legendre.x
 
 data.txt: legendre.x
 	./legendre.x > data.txt
