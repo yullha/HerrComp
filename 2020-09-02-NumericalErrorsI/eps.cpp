@@ -1,8 +1,10 @@
-// Determine the machine precision
 #include <iostream>
+#include <cstdlib>
+
 using namespace std;
 
-int main(int argc, char *argv[]) {
+int main(int argc, char *argv[])
+{
   cout.precision(7);
   cout.setf(ios::scientific);
   
@@ -10,13 +12,11 @@ int main(int argc, char *argv[]) {
 
   float eps = 1.0, one = 1.0;
     
-  for( int i = 0; i < N; i++) {
+  for( int i = 0; i <= N; i++)
+  {
+    cout << i << "\t" << one << "\t" << eps << "\n";
     eps = eps/2.0;
-    one = 1.0 + eps;
-    cout << i
-          << "\t" << one
-          << "\t" << eps
-          << "\n";
+    one = 1.0 + eps;    
   }
 
   return 0;
