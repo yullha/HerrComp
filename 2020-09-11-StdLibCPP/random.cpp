@@ -2,7 +2,7 @@
 #include <random>
 
 const int seed = 0;       // seed for random generator
-const double xmin = 0.0;  // random number x
+const double xmin = 0.0;  // range of random number x
 const double xmax = 1.0;
 
 const int N = 10000;      // N random numbers generated
