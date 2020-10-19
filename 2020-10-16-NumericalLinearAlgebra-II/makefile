@@ -7,4 +7,4 @@ datos.txt: run.sh eigen-Axb.x
 	bash run.sh
 
 %.x: %.cpp
-	g++ $< -I /home/oquendo/local/include -o $@
+	g++ $< -I /home/live/local/include -o $@
